@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+/* تنسيق محتوى كل قسم */
+.top-of-week, .recommendations {
+    margin-top: 30vh; /* تباعد بين القسمين */
+ position: relative;
+}
+
+
+.top-of-week .h2 {
+    margin-top: 50px;/* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: left;
+    position: absolute; /* تحديد الموقع بالنسبة للصفحة */
+    top: -70px; /* المسافة من الأعلى */
+    left: 10px; /* المسافة من اليسار */
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Outfit;
+
+}
+
+.recommendations .h2 {
+    margin-top: -70px; /* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: left;
+    position: absolute; /* تحديد الموقع بالنسبة للصفحة */
+    top: 5px; /* المسافة من الأعلى */
+    left: 10px; /* المسافة من اليسار */
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Outfit;
+
+}
+
+
+
+.image-gallery {
+    display: flex;
+    position: relative; 
+  
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100px; /* Adjust the width as needed */
+    margin-right: 20px; /* Add margin between images */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    z-index: 1;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: #756AB6;
+    cursor: pointer;
+    
+
+}
+
+.arrow-left {
+    left: 0;
+    transform: translate(-180%,-50%);
+    font-weight: bold;
+}
+
+.arrow-right {
+    right: 0;
+    transform: translate(50%,-50%);
+    font-weight: bold;
+}
+
+.top-of-week .view-all{
+    margin-top: 5px ; /* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: right;
+    position: relative; /* تحديد الموقع بالنسبة للصفحة */
+    top: -20px; /* المسافة من الأعلى */
+    right: 30px; /* المسافة من اليسار */
+    color: #AC87C5;
+    cursor: pointer;
+
+}
+.recommendations .view-all{
+    margin-top: -80px ; /* هامش أسفل العنوان للفصل بينه وبين الصور */
+    text-align: right;
+    position: absolute; /* تحديد الموقع بالنسبة للصفحة */
+    top: 20px; /* المسافة من الأعلى */
+    right: 30px; /* المسافة من اليسار */
+    color: #AC87C5;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
